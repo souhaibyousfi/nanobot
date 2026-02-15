@@ -3,6 +3,8 @@ services:
     name: nanobot-service
     runtime: docker
     plan: free
+    # إضافة السطر التالي هو المفتاح:
+    startCommand: nanobot serve 
     envVars:
       - key: PORT
         value: "18790"
